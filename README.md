@@ -27,7 +27,6 @@ These instructions will help you set up and run the project on your local machin
 1. Clone the repository:
 ```
     git clone https://github.com/yourusername/ProductManagementAPI.git
-
 ```
 2. Navigate to the project directory:
 ```
@@ -74,18 +73,30 @@ These instructions will help you set up and run the project on your local machin
     dotnet build
 ```
 
-2. Run the application:
+2. Navigate to the API project
 ```
-    dotnet run
+    cd ProductManagementAPI
+```
+   
+3. Run the application:
+```
+    dotnet run --launch-profile https
 ```
 
-The API will be available at `https://localhost:7254/swagger/index.html`.
+4. Do the same with the WebClient project with another Terminal window
+```
+    cd ProductManagementWebClient
+    dotnet run --launch-profile https
+```
+
+The API will be available at [https://localhost:7254/swagger/index.html](https://localhost:7254/swagger/index.html).
+The Web interface will be available at [https://localhost:7102/Product](https://localhost:7102/Product)
 
 ## API Endpoints
 
 ### Get All Products
 
-- **URL:** `GET /api/Product`
+- **URL:** [`GET /api/Product`](https://localhost:7254/api/Product)
 - **Response:**
 ```
 [
@@ -102,7 +113,7 @@ The API will be available at `https://localhost:7254/swagger/index.html`.
 ```
 ### Get Product by ID
 
-- **URL:** `GET /api/Product/Details/{id}`
+- **URL:** [`GET /api/Product/Details/{id}`](https://localhost:7254/api/Details/1)
 - **Response:**
 ```
 {
@@ -117,11 +128,11 @@ The API will be available at `https://localhost:7254/swagger/index.html`.
 
 ### Create a New Product
 
-- **URL:** `POST /api/Product/Create`
+- **URL:** [`POST /api/Product/Create`](https://localhost:7254/api/Product/Create)
 - **Request Body:**
 ```
 {
-    "productId": 1,
+    "productId": 0,
     "productName": "Product 1",
     "categoryId": 1,
     "unitsInStock": 100,
@@ -132,7 +143,7 @@ The API will be available at `https://localhost:7254/swagger/index.html`.
 
 ### Update an Existing Product
 
-- **URL:** `PUT /api/Product/Edit/{id}`
+- **URL:** [`PUT /api/Product/Edit/{id}`](https://localhost:7254/api/Product/Edit/1)
 - **Request Body:**
 ```
 {
@@ -148,7 +159,7 @@ The API will be available at `https://localhost:7254/swagger/index.html`.
 
 ### Delete a Product
 
-- **URL:** `DELETE /api/Product/Delete/{id}`
+- **URL:** [`DELETE /api/Product/Delete/{id}`](https://localhost:7254/api/Product/Delete/1)
 - **Response:** `204 No Content`
 
 ## Contributing
