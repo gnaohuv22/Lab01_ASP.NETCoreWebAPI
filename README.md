@@ -26,11 +26,11 @@ These instructions will help you set up and run the project on your local machin
 
 1. Clone the repository:
 ```
-    git clone https://github.com/yourusername/ProductManagementAPI.git
+    git clone https://github.com/gnaohuv22/Lab01_ASP.NETCoreWebAPI.git
 ```
 2. Navigate to the project directory:
 ```
-    cd ProductManagementAPI
+    cd Lab01_ASP.NETCoreWebAPI
 ```
 
 3. Restore the dependencies:
@@ -42,7 +42,7 @@ These instructions will help you set up and run the project on your local machin
 
 1. Open the solution in Visual Studio:
 ```
-    start ProductManagementAPI.sln
+    start Lab01_ASP.NETCoreWebAPI.sln
 ```
 
 2. Open the `appsettings.json` file and configure your database connection string:
