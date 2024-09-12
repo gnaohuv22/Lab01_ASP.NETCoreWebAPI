@@ -113,7 +113,7 @@ The Web interface will be available at [https://localhost:7102/Product](https://
 ```
 ### Get Product by ID
 
-- **URL:** [`GET /api/Product/Details/{id}`](https://localhost:7254/api/Details/1)
+- **URL:** [`GET /api/Product/Details/{id}`](https://localhost:7254/api/Product/Details/1)
 - **Response:**
 ```
 {
